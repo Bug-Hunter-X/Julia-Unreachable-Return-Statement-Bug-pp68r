@@ -1,0 +1,3 @@
+# Julia Unreachable Return Statement Bug
+
+This repository demonstrates an uncommon bug in Julia related to unreachable return statements.  The `myfunction` in `bug.jl` has a seemingly redundant return 0 statement that is never executed.  While not strictly an error, this highlights how the compiler's handling of multiple return statements within conditional blocks can sometimes behave unexpectedly, potentially leading to unexpected results or confusing behavior in more complex scenarios.  The `bugSolution.jl` offers a modified function that avoids this issue for better clarity and reliability.
